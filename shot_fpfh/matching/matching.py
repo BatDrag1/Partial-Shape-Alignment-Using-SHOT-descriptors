@@ -178,7 +178,7 @@ def get_n_best_correspodences(scan_descriptors,ref_descriptors,n,threshold,metho
     non_empty_descriptors = np.any(scan_descriptors, axis=1).nonzero()[0]
     print("Amount of points in scan point cloud with non-zero descriptors: "+str(len(non_empty_descriptors)))
     non_empty_ref_descriptors = np.any(ref_descriptors, axis=1).nonzero()[0]
-    print("Amount of points in scan point cloud with non-zero descriptors: "+str(len(non_empty_ref_descriptors)))
+    print("Amount of points in ref point cloud with non-zero descriptors: "+str(len(non_empty_ref_descriptors)))
     nr_of_point_in_scan = len(scan_descriptors[non_empty_descriptors])
     # brute force computation of the distance matrix, faster than a KDTree as the search space has a high dimension
     distance_matrix = cdist(
