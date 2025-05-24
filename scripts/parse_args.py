@@ -5,13 +5,13 @@ def add_io_parameters(parser) -> None:
     parser.add_argument(
         "--scan_file_path",
         type=str,
-        default="C:\\Users\\adamt\\OneDrive - Syddansk Universitet\\2. semester\\Førsteårsprojekt\\bunny\\bun000_bin.ply",
+        default="",
         help="Path to the first point cloud to use.",
     )
     parser.add_argument(
         "--ref_file_path",
         type=str,
-        default="C:\\Users\\adamt\\OneDrive - Syddansk Universitet\\2. semester\\Førsteårsprojekt\\bunny\\bun315_bin.ply",
+        default="",
         help="Path to the second point cloud to use (reference point cloud).",
     )
     parser.add_argument(
