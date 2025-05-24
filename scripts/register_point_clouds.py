@@ -9,7 +9,7 @@ import numpy as np
 import coloredlogs
 
 from scripts.parse_args import parse_args
-from shot import (
+from shot_fpfh import (
     RegistrationPipeline,
     check_transform,
     checkpoint,
