@@ -10,18 +10,18 @@ import numpy as np
 import numpy.typing as npt
 from sklearn.neighbors import KDTree
 
-from shot.analysis import get_incorrect_matches, plot_distance_hists
-from shot.core import RigidTransform
-from shot.descriptors import ShotMultiprocessor, compute_fpfh_descriptor
-from shot.helpers import write_ply
-from shot.icp import icp_point_to_plane, icp_point_to_point, updated_icp_point_to_plane
-from shot.keypoint_selection import (
+from shot_fpfh.analysis import get_incorrect_matches, plot_distance_hists
+from shot_fpfh.core import RigidTransform
+from shot_fpfh.descriptors import ShotMultiprocessor, compute_fpfh_descriptor
+from shot_fpfh.helpers import write_ply
+from shot_fpfh.icp import icp_point_to_plane, icp_point_to_point, updated_icp_point_to_plane
+from shot_fpfh.keypoint_selection import (
     select_keypoints_iteratively,
     select_keypoints_subsampling,
     select_keypoints_with_density_threshold,
     select_query_indices_randomly,
 )
-from shot.matching import (
+from shot_fpfh.matching import (
     basic_matching,
     double_matching_with_rejects,
     match_descriptors,
